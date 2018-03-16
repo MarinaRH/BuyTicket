@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import App from './components/App';
+import AppBuyTicket from './components/appBuyTicket';
 
 render(
-  <App />,
+  <AppBuyTicket />,
   document.getElementById('root')
 )
