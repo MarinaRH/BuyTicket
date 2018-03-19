@@ -1,8 +1,8 @@
 import React from 'react';
-import CazuelaHigh from './cazuelaHigh'
+import Cazuela from './cazuela'
 const AppBuyTicket = () => (
   <div>
-    <CazuelaHigh />
+    <Cazuela />
   </div>
 )
 
