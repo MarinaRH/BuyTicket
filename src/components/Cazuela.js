@@ -3,10 +3,10 @@ import React from 'react';
 const Cazuela = ({ data }) => {
   data = data[0].types
   return (
-    <ul>
+    <ul className="Cazuela">
       {
         data.map((element, index) =>
-          <li key={index}>
+          <li className="List-Cazuela" key={index}>
             {element}
           </li>
         )

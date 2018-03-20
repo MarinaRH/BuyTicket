@@ -2,19 +2,21 @@
 
 .Center {
   text-align: center;
+  padding: 10px auto;
 }
 
 * {
   color: rgb(191, 195, 235);
 }
 
-.PalcosBajos {
+.PalcosBajos, .PalcosAltos, .Platea, .Galeria, .Cazuela {
   width: 80%;
   display: flex;
-  margin-top: 0;
+  padding: 0;
+  margin: 0;
 }
 
-.PalcosAltos {
+/* .PalcosAltos {
   width: 80%;
   margin:auto 40px;
   background-color: rgb(245, 163, 12);
@@ -22,31 +24,58 @@
   display: flex;
   align-items: center;
   margin-top: 0;
-}
+} */
 
-.Plateas {
+/* .Plateas {
   width: 80%;
-  margin: 20px auto 20px;
   display: flex;
   margin-top: 0;
-}
-
-.list-palcoBajo {
+} */
+.List-Galeria {
   text-decoration: none;
-  background-color: rgb(66, 23, 146);
+  background-color: rgb(234, 236, 65);
   border: 1px solid black;
   list-style: none;
   height: 65px;
-  width: 33.33%;
+  width: 50%;
+  align-items: center;
+}
+.List-Cazuela {
+  text-decoration: none;
+  background-color: rgb(105, 211, 35);
+  border: 1px solid black;
+  list-style: none;
+  height: 65px;
+  width: 50%;
+  align-items: center;
+}
+
+.List-PalcosAlto {
+  text-decoration: none;
+  background-color: rgb(240, 193, 63);
+  border: 1px solid black;
+  list-style: none;
+  height: 65px;
+  width: 100%;
+  align-items: center;
+}
+
+.List-PalcoBajo {
+  text-decoration: none;
+  background-color: rgb(79, 8, 107);
+  border: 1px solid black;
+  list-style: none;
+  height: 65px;
+  width: 50%;
   align-items: center;
 }
 
 .List-platea {
   text-decoration: none;
-  background-color: rgb(45, 11, 194);
+  background-color: rgb(70, 9, 184);
   border: 1px solid black;
   height: 65px;
-  width: 82%;
+  width: 80%;
   list-style: none;
   display: flex;
   align-items: center;

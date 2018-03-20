@@ -13,13 +13,12 @@ const data = [{ id: 'CAZ', name: 'CAZUELA', types: ['ALTA', 'LATERAL DERECHO', '
 ]
 
 const AppBuyTicket = () => (
-  <div>
+  <div className="Center">
     <Cazuela data={data} />
     <Galeria data={data} />
-    {/* <Galeria data={data} />
-    <PalcosAltos PAltos={PAltos[0]} />
-    <PalcosBajos PalcoBajos={PBajos} />
-    <Platea Plateas={PlatAB} /> */}
+    <PalcosAltos data={data} />
+    <PalcosBajos data={data} />
+    <Platea data={data} />
   </div>
 )
 

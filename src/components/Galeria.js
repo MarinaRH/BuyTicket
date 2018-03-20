@@ -3,10 +3,10 @@ import React from 'react'
 const Galeria = ({ data }) => {
   data = data[1].types
   return (
-    <ul>
+    <ul className="Galeria">
       {
         data.map((element, index) =>
-          <li key={index}>
+          <li className="List-Galeria" key={index}>
             {element}
           </li>
         )

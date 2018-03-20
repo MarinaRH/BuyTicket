@@ -1,13 +1,19 @@
 import React from 'react';
 
-const PalcosBajos = ({PalcoBajos}) => (
+const PalcosBajos = ({data}) => {
+  data = data[3].types
+  return (
     <ul className="PalcosBajos">
-      {PalcoBajos.map((PalcoBajo,index) => 
-         <li className="list-palcoBajo" key={index}>
-            {PalcoBajo.name}
-         </li>
-      )} 
-  </ul>
-)
+      {
+        data.map((element, index) =>
+          <li className="List-PalcoBajo" key={index}>
+            {element}
+          </li>
+        )
+      }
+    </ul>
+    )
+}
+
 
 export default PalcosBajos

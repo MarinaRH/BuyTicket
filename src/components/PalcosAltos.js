@@ -1,14 +1,17 @@
 import React from 'react';
 
-const PalcosAltos = ({PAltos}) => (
-  <div className="PalcosAltos">
-    <div className="Center">
-      <p>{PAltos.name}</p>
-      <span>{PAltos.description}</span>
-    </div>
-
-    
-  </div>
-)
+const PalcosAltos = ({data}) => {
+  data = data[2].types
+  return (
+    <ul className="PalcosAltos">
+      {
+        data.map((element, index) =>
+          <li className="List-PalcosAlto" key={index}>
+            {element}
+          </li>
+        )
+      }
+    </ul>)
+}
 
 export default PalcosAltos

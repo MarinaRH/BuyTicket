@@ -1,14 +1,17 @@
 import React from 'react';
 
-const Platea = ({Plateas}) => (
-  <ul classNmae="Plateas">
-    {Plateas.map((platea,index) =>
-      <li className="List-platea" key={index}>
-         {platea.name}
-      </li>
-
-    )}
-  </ul>
-
-)
+const Platea = ({data}) => {
+  data = data[4].types
+  return (
+    <ul className="Platea">
+      {
+        data.map((element, index) =>
+          <li className="List-platea" key={index}>
+            {element}
+          </li>
+        )
+      }
+    </ul>
+    )
+}
 export default Platea
