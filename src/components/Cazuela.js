@@ -7,7 +7,7 @@ const Cazuela = ({ data }) => {
     <ul>
       {
         data.map((element, index) =>
-          <CazuelaType typeCazuela={element} key= {index} />
+          <CazuelaType typeCazuela={element} key={index} />
         )
       }
     </ul>)

@@ -1,6 +1,5 @@
 import React from 'react';
 import Cazuela from './Cazuela';
-import Galeria from './Galeria';
 
 const data = [{
   name: 'CAZUELA ALTA',
@@ -24,8 +23,7 @@ const data = [{
 }]
 const AppBuyTicket = () => (
   <div>
-    <Cazuela data = {data} />
-    <Galeria />
+    <Cazuela data={data} />
   </div>
 )
 
