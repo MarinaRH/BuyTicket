@@ -3,7 +3,7 @@ import PalcosAltos from './PalcosAltos';
 import PalcosBajos from './PalcosBajos';
 import Platea from './Platea';
 
-const PalcoAltos = [{
+const PAltos = [{
   name: 'PALCOS ALTOS',
   description: '300mtrs',
   nivel: 3
@@ -40,7 +40,7 @@ const PlatAB=[
 
 const App = () => (
   <div>
-    <PalcosAltos PAltos={PalcoAltos[0]}/>
+    <PalcosAltos PAltos={PAltos[0]}/>
     <PalcosBajos PalcoBajos={PBajos}/>
     <Platea Plateas={PlatAB} />
     </div>
