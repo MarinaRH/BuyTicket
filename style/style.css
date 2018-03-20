@@ -8,3 +8,25 @@
 .Center {
   text-align: center;
 }
+
+* {
+  color: white;
+}
+
+.PalcosBajos {
+  width: 60%;
+  margin: 20px auto 20px;
+  display: inline-flex;
+}
+
+.list-palcoBajo {
+  text-decoration: none;
+  background-color: rgb(66, 23, 146);
+  height: 55px;
+  width: 33%;
+  border: 1px solid black;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  
+}
