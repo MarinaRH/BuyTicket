@@ -1,8 +1,21 @@
 import React from 'react';
-import CazuelaCentral from './CazuelaCentral'
+import Platea from './Platea'
+
+const PlatAB=[
+  {
+  name:'PLATEA PREFERENCIAL',
+  description:"1er Nivel",
+  piso:1
+  },
+  {
+  name:'PLATEA GENERAL',
+  description:"1er Nivel",
+  piso:1
+  }
+]
 const App = () => (
   <div>
-    <CazuelaCentral />
+    <Platea Plateas={PlatAB} />
   </div>
 )
 

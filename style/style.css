@@ -1,12 +1,18 @@
-.Ccentral {
+
+.Plateas {
   width: 60%;
   margin: 20px auto 20px;
+  display: inline-flex;
 }
 
-.Ccentral1 {
-  background-color: orange;
+.List-platea {
+  text-decoration: none;
+  background-color: rgb(45, 11, 194);
   height: 55px;
-  width: 33%;
-  display: inline-block;
+  width: 50%;
   border: 1px solid black;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  
 }
