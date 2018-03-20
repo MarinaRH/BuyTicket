@@ -1,6 +1,7 @@
 import React from 'react';
 import PalcosAltos from './PalcosAltos';
 import PalcosBajos from './PalcosBajos';
+import Platea from './Platea';
 
 const PalcoAltos = [{
   name: 'PALCOS ALTOS',
@@ -24,12 +25,25 @@ const PBajos = [{
   nivel: 2
 }
 ]
+const PlatAB=[
+  {
+  name:'PLATEA PREFERENCIAL',
+  description:"1er Nivel",
+  piso:1
+  },
+  {
+  name:'PLATEA GENERAL',
+  description:"1er Nivel",
+  piso:1
+  }
+]
 
 const App = () => (
   <div>
     <PalcosAltos PAltos={PalcoAltos[0]}/>
     <PalcosBajos PalcoBajos={PBajos}/>
-  </div>
+    <Platea Plateas={PlatAB} />
+    </div>
 )
 
 export default App

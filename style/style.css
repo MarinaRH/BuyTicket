@@ -13,7 +13,7 @@
   color: white;
 }
 
-.PalcosBajos {
+.Plateas {
   width: 60%;
   margin: 20px auto 20px;
   display: inline-flex;
@@ -24,6 +24,13 @@
   background-color: rgb(66, 23, 146);
   height: 55px;
   width: 33%;
+}
+
+.List-platea {
+  text-decoration: none;
+  background-color: rgb(45, 11, 194);
+  height: 55px;
+  width: 50%;
   border: 1px solid black;
   list-style: none;
   display: flex;
