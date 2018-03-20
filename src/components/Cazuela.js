@@ -1,16 +1,19 @@
 import React from 'react';
-import CazuelaType from './CazuelaType'
 
 const Cazuela = ({ data }) => {
-
+  data = data[0].types
   return (
     <ul>
       {
         data.map((element, index) =>
-          <CazuelaType typeCazuela={element} key={index} />
+          <li key={index}>
+            {element}
+          </li>
         )
       }
-    </ul>)
+    </ul>
+  )
+
 }
 
 export default Cazuela

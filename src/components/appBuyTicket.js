@@ -5,65 +5,21 @@ import PalcosAltos from './PalcosAltos'
 import PalcosBajos from './PalcosBajos'
 import Platea from './Platea'
 
-const data = [{
-  name: 'GALERIA VISIBIL',
-  description: 'Visib. Restringida',
-  nivel: '3ER'
-},
-{
-  name: 'GALERIA BUENA',
-  description: 'VISIBILIDAD',
-  nivel: '3ER'
-},
-{
-  name: 'GALERIA VISIBIL',
-  description: 'Visib. Restringida',
-  nivel: '3ER'
-}]
-
-
-const PAltos = [{
-  name: 'PALCOS ALTOS',
-  description: '300mtrs',
-  nivel: 3
-}]
-
-const PBajos = [{
-  name: 'PALCOS BAJOS',
-  description: '',
-  nivel: 2
-},
-{
-  name: '',
-  description: '',
-  nivel: 2
-},
-{
-  name: 'PALCOS BAJOS',
-  description: '',
-  nivel: 2
-}
-]
-const PlatAB=[
-  {
-  name:'PLATEA PREFERENCIAL',
-  description:"1er Nivel",
-  piso:1
-  },
-  {
-  name:'PLATEA GENERAL',
-  description:"1er Nivel",
-  piso:1
-  }
+const data = [{ id: 'CAZ', name: 'CAZUELA', types: ['ALTA', 'LATERAL DERECHO', 'CENTRAL', 'LATERAL IZQUIERDO'], level: 4 },
+{ id: 'GAL', name: 'GALERIA', types: ['BUENA', 'VISIBLE DERECHO', 'VISIBLE IZQUIERDO'], level: 3 },
+{ id: 'PAA', name: 'PALCOS', types: ['ALTOS'], level: 2 },
+{ id: 'PAB', name: 'PALCOS', types: ['BAJO DERECHO', 'BAJO IZQUIERDO'], level: 1 },
+{ id: 'PLA', name: 'PLATEA', types: ['GENERAL', 'PREFERENCIAL'], level: 1 }
 ]
 
 const AppBuyTicket = () => (
   <div>
-    <Cazuela data = {data} />
-    <Galeria data = {data} />
-    <PalcosAltos PAltos={PAltos[0]}/>
-    <PalcosBajos PalcoBajos={PBajos}/>
-    <Platea Plateas={PlatAB} />
+    <Cazuela data={data} />
+    <Galeria data={data} />
+    {/* <Galeria data={data} />
+    <PalcosAltos PAltos={PAltos[0]} />
+    <PalcosBajos PalcoBajos={PBajos} />
+    <Platea Plateas={PlatAB} /> */}
   </div>
 )
 

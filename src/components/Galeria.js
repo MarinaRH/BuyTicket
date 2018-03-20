@@ -1,15 +1,17 @@
 import React from 'react'
-import GaleriaType from './GaleriaType'
 
-const Galeria = ({ data }) => (
-  <ul>
-    {
-      data.map((element, index) =>
-        <GaleriaType typeGaleria={element} key={index} />
-      )
-    }
-
-  </ul>
-)
+const Galeria = ({ data }) => {
+  data = data[1].types
+  return (
+    <ul>
+      {
+        data.map((element, index) =>
+          <li key={index}>
+            {element}
+          </li>
+        )
+      }
+    </ul>)
+}
 
 export default Galeria
