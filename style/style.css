@@ -1,12 +1,10 @@
-.Ccentral {
-  width: 60%;
+.PAltos {
+  width: 80%;
   margin: 20px auto 20px;
+  background-color: rgb(245, 163, 12);
+  border: 1px solid black;
 }
 
-.Ccentral1 {
-  background-color: orange;
-  height: 55px;
-  width: 33%;
-  display: inline-block;
-  border: 1px solid black;
+.Center {
+  text-align: center;
 }

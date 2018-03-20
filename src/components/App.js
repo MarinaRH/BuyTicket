@@ -1,8 +1,15 @@
 import React from 'react';
-import CazuelaCentral from './CazuelaCentral'
+import PalcosAltos from './PalcosAltos'
+
+const PalcoAltos = [{
+  name: 'PALCOS ALTOS',
+  description: '300mtrs',
+  nivel: 3
+}]
+
 const App = () => (
   <div>
-    <CazuelaCentral />
+    <PalcosAltos PAltos={PalcoAltos[0]}/>
   </div>
 )
 
