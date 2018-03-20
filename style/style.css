@@ -1,25 +1,54 @@
-.cazuela-high {
-  display: flex; 
-  background: rgb(134, 122, 122); 
-  flex-direction: row;
-  justify-content: space-around
+
+
+.Center {
+  text-align: center;
 }
 
-.cazuela-high div {
-  height: 20vh;
-  background: rgb(4, 68, 83);
-  padding: 0 10vw;
-  color: white;  
-}
-.Ccentral {
-  width: 60%;
-  margin: 20px auto 20px;
+* {
+  color: white;
 }
 
-.Ccentral1 {
-  background-color: orange;
-  height: 55px;
-  width: 33%;
-  display: inline-block;
+.PalcosBajos {
+  width: 80%;
+  display: flex;
+  margin-top: 0;
+}
+
+.PalcosAltos {
+  width: 80%;
+  margin:auto 40px;
+  background-color: rgb(245, 163, 12);
   border: 1px solid black;
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.Plateas {
+  width: 80%;
+  margin: 20px auto 20px;
+  display: flex;
+  margin-top: 0;
+}
+
+.list-palcoBajo {
+  text-decoration: none;
+  background-color: rgb(66, 23, 146);
+  border: 1px solid black;
+  list-style: none;
+  height: 65px;
+  width: 33.33%;
+  align-items: center;
+}
+
+.List-platea {
+  text-decoration: none;
+  background-color: rgb(45, 11, 194);
+  border: 1px solid black;
+  height: 65px;
+  width: 82%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  
 }
