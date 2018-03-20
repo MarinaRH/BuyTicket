@@ -4,6 +4,7 @@ import Galeria from './Galeria'
 import PalcosAltos from './PalcosAltos'
 import PalcosBajos from './PalcosBajos'
 import Platea from './Platea'
+import SelectSeat from './SelectSeat'
 
 const data = [{ id: 'CAZ', name: 'CAZUELA', types: ['ALTA', 'LATERAL DERECHO', 'CENTRAL', 'LATERAL IZQUIERDO'], level: 4 },
 { id: 'GAL', name: 'GALERIA', types: ['BUENA', 'VISIBLE DERECHO', 'VISIBLE IZQUIERDO'], level: 3 },
@@ -19,6 +20,8 @@ const AppBuyTicket = () => (
     <PalcosAltos data={data} />
     <PalcosBajos data={data} />
     <Platea data={data} />
+    <SelectSeat />
+    
   </div>
 )
 

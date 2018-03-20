@@ -6,7 +6,7 @@
 }
 
 * {
-  color: rgb(191, 195, 235);
+  color: rgb(79, 79, 82);
 }
 
 .PalcosBajos, .PalcosAltos, .Platea, .Galeria, .Cazuela {
@@ -80,4 +80,25 @@
   display: flex;
   align-items: center;
   
+}
+
+/* 2 vista */
+
+.Asientos {
+  border: 1px solid black;
+  width: 200px;
+  height: 200px;
+}
+
+.Disponibles {
+  width: 10px;
+  height: 10px;
+  background-color: brown;
+  border: 1px solid black;
+}
+.Ocupados {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(235, 216, 50);
+  border: 1px solid black;
 }
