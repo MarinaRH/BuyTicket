@@ -1,7 +1,9 @@
-# ReduxSimpleStarter
+# BUYTICKET (JOINNUS)
 
-## Artits App
+## Objetivo:
 
-Aplicacion en react de artistas
+- Desarrollar una interface que permita realizar la compra de tickets  para eventos de tipo teatro considerando que los escenarios pueden tener mas de un piso.
 
-- Primero identifica los componentes y que propiedades tiene cada uno.
+## Flujo
+
+- Proyecto realizado con React y Redux.

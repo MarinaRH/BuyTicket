@@ -4,14 +4,13 @@
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
   "repository": "https://github.com/MarinaRH/BuyTicket",
-  "homepage":"https://marinarh.github.io/BuyTicket/",
+  "homepage": "https://marinarh.github.io/BuyTicket/",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "author": "",
   "license": "ISC",
