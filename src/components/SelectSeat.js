@@ -5,7 +5,40 @@ const SelectSeat = ({navigateTo}) => (
   <div className="Center selectSeat">
   <h2>SELECCIONA TUS ASIENTOS</h2>
   <div className="Center Asientos">
-  
+    <table>
+      <tr>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+      </tr>
+      <tr>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+      </tr>
+      <tr>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+      </tr>
+      <tr>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+        <td className="Site"></td>
+      </tr>
+    </table>
   </div><br/><br/>
   <div className="Leyenda">
     <div className="Disponibles"></div> DISPONIBLES<br/><br/>
