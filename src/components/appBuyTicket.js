@@ -4,7 +4,7 @@ import Galeria from './Galeria'
 import PalcosAltos from './PalcosAltos'
 import PalcosBajos from './PalcosBajos'
 import Platea from './Platea'
-// import SelectSeat from './SelectSeat'
+import Header from './Header'
 
 const data = [
   { id: 'CAZ',
@@ -14,42 +14,50 @@ const data = [
       {name: 'LATERAL DERECHO', butacas: 14},
       {name: 'CENTRAL', butacas: 14},
       {name: 'LATERAL IZQUIERDO', butacas: 14}],
-    level: 4 },
+    level: '4 NIVEL' },
   { id: 'GAL', 
     name: 'GALERIA', 
     types:[
       {name: 'BUENA', butacas: 24}, 
       {name: 'VISIBLE DERECHO', butacas: 24},
       {name: 'VISIBLE IZQUIERDO', butacas: 24}],
-    level: 3 },
+    level: '3 NIVEL'},
   { id: 'PAA', 
     name: 'PALCOS', 
     types: [
       {name:'ALTOS',butacas:55}],
-      level: 2 },
+      level: '2 NIVEL' },
   { id: 'PAB', 
     name: 'PALCOS',
     types: [
       {name:'BAJO DERECHO',butacas:32},
       {name:'BAJO IZQUIERDO',butacas:32}],
-    level: 1 },
+    level: '' },
   { id: 'PLA',
     name: 'PLATEA',
     types: [
       {name:'GENERAL',butacas:34},
       {name:'PREFERENCIAL',butacas:34}],
-    level: 1 }
+    level: '1 NIVEL' }
 ]
 
 const AppBuyTicket = () => (
-  <div className="Center">
-    <Cazuela data={data} />
-    <Galeria data={data} />
-    <PalcosAltos data={data} />
-    <PalcosBajos data={data} />
-    <Platea data={data} />
-    {/* <SelectSeat /> */}
-    
+  <div>
+    <Header />
+      <br/>
+      <div className="Center">
+        <button className="Btnzoom">zoom +</button>
+        <button className="Btnzoom">zoom -</button><br/><br/><br/>
+      </div>
+      <br/><br/>
+      <div className="Center BuyTicket">
+        <Cazuela data={data} />
+        <Galeria data={data} />
+        <PalcosAltos data={data} />
+        <PalcosBajos data={data} />
+        <Platea data={data} />
+        
+      </div>
   </div>
 )
 

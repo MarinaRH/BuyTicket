@@ -2,16 +2,22 @@ import React from 'react'
 import { connect } from 'react-redux';
 
 const SelectSeat = ({navigateTo}) => (
-  <div className="Center">
-  <button>Atras</button>
-  <button>zoom +</button>
-  <button>zoom -</button><br/>
-  <div className="Asientos"></div><br/><br/>
-  <span><div className="Disponibles"></div>Disponibles</span>
-  <span><div className="Ocupados"></div>Ocupados</span><br/><br/>
-  <button
+  <div className="Center selectSeat">
+  <h2>SELECCIONA TUS ASIENTOS</h2>
+  <div className="Center Asientos">
+  
+  </div><br/><br/>
+  <div className="Leyenda">
+    <div className="Disponibles"></div> DISPONIBLES<br/><br/>
+    <div className="Ocupados"></div> OCUPADOS
+  </div>
+  <button className="Btnselect"
     onClick={() => navigateTo('pagina-2')}
-    >VOLVER</button>
+    >VOLVER
+  </button>
+  <button className="Btnselect">
+    COMPRAR
+  </button>
   </div>
 )
 
