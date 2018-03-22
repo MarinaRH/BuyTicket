@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import AppBuyTicket from './components/AppBuyTicket';
+// import AppBuyTicket from './components/AppBuyTicket';
+import App from './components/App';
 import {Provider} from 'react-redux';
 import {createStore} from 'redux';
 
@@ -33,13 +34,13 @@ const reducer=(state,action)=>{
 
 const initialState = {
   seccion: '',
-  paginaActual: 'pagina-1',
+  paginaActual: 'pagina-2'
 }
 
 const store = createStore(reducer, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 render(
   <Provider store={store}>
-  <AppBuyTicket />
+  <App />
   </Provider>,
   document.getElementById('root')
 )

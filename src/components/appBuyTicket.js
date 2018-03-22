@@ -4,7 +4,7 @@ import Galeria from './Galeria'
 import PalcosAltos from './PalcosAltos'
 import PalcosBajos from './PalcosBajos'
 import Platea from './Platea'
-import SelectSeat from './SelectSeat'
+// import SelectSeat from './SelectSeat'
 
 const data = [
   { id: 'CAZ',
@@ -48,7 +48,7 @@ const AppBuyTicket = () => (
     <PalcosAltos data={data} />
     <PalcosBajos data={data} />
     <Platea data={data} />
-    <SelectSeat />
+    {/* <SelectSeat /> */}
     
   </div>
 )
