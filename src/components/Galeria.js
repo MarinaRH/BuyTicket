@@ -7,7 +7,7 @@ const Galeria = ({ data, seleccionarSeccion,navigateTo}) => {
     <ul className="Galeria">
       {
         data.map((element, index) =>
-          <li className="List-Galeria" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-1')}}>
+          <li className="List-Galeria" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-3')}}>
             {element.name}
           </li>
         )

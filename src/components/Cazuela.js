@@ -8,7 +8,7 @@ const Cazuela = ({ data, seleccionarSeccion,navigateTo}) => {
     <ul className="Cazuela">
       {
         data.map((element, index) =>
-          <li className="List-Cazuela" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-1')}}>
+          <li className="List-Cazuela" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-3')}}>
             {element.name}
             
           </li>

@@ -7,7 +7,7 @@ const Platea = ({data, seleccionarSeccion,navigateTo}) => {
     <ul className="Platea">
       {
         data.map((element, index) =>
-          <li className="List-platea" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-1')}}>
+          <li className="List-platea" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-3')}}>
             {element.name}
           </li>
         )

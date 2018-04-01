@@ -6,6 +6,7 @@ import PalcosBajos from './PalcosBajos'
 import Platea from './Platea'
 import Header from './Header'
 import Aside from './Aside'
+import {connect} from 'react-redux'
 
 
 const data = [
@@ -43,14 +44,15 @@ const data = [
     level: '1 NIVEL' }
 ]
 
-const AppBuyTicket = () => (
+const AppBuyTicket = ({navigateTo}) => (
   <div>
     <Header />
     <Aside />
-      <main className="Main-home">
-        <div className="Center">
+      <main className="Main-home Main-Buy">
+        <div>
+          <button className="Btnzoom"onClick={()=> {navigateTo('pagina-1')}}>volver</button>
           <button className="Btnzoom">zoom +</button>
-          <button className="Btnzoom">zoom -</button><br/><br/><br/>
+          <button className="Btnzoom">zoom -</button><br/><br/>
         </div>
         <br/><br/>
         <div className="Center BuyTicket">
@@ -63,5 +65,20 @@ const AppBuyTicket = () => (
       </main>
   </div>
 )
+export default connect(
+  (state) => ({
 
-export default AppBuyTicket
+  }),
+  (dispatch) => ({
+    seleccionarSeccion(seccion) {
+      dispatch({type: 'SELECCIONAR_SECCION',seccion})
+    },
+    navigateTo: (pagina) => {
+      dispatch({
+        type: 'NAVIGATE_TO',
+        pagina
+      })
+    }
+  })
+)(AppBuyTicket)
+
