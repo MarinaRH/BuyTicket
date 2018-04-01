@@ -34,7 +34,7 @@ const reducer=(state,action)=>{
 
 const initialState = {
   seccion: '',
-  paginaActual: 'pagina-2'
+  paginaActual: 'pagina-1'
 }
 
 const store = createStore(reducer, initialState, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())

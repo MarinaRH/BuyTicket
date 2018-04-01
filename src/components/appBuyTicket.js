@@ -5,6 +5,8 @@ import PalcosAltos from './PalcosAltos'
 import PalcosBajos from './PalcosBajos'
 import Platea from './Platea'
 import Header from './Header'
+import Aside from './Aside'
+
 
 const data = [
   { id: 'CAZ',
@@ -44,20 +46,21 @@ const data = [
 const AppBuyTicket = () => (
   <div>
     <Header />
-      <br/>
-      <div className="Center">
-        <button className="Btnzoom">zoom +</button>
-        <button className="Btnzoom">zoom -</button><br/><br/><br/>
-      </div>
-      <br/><br/>
-      <div className="Center BuyTicket">
-        <Cazuela data={data} />
-        <Galeria data={data} />
-        <PalcosAltos data={data} />
-        <PalcosBajos data={data} />
-        <Platea data={data} />
-        
-      </div>
+    <Aside />
+      <main className="Main-home">
+        <div className="Center">
+          <button className="Btnzoom">zoom +</button>
+          <button className="Btnzoom">zoom -</button><br/><br/><br/>
+        </div>
+        <br/><br/>
+        <div className="Center BuyTicket">
+          <Cazuela data={data} />
+          <Galeria data={data} />
+          <PalcosAltos data={data} />
+          <PalcosBajos data={data} />
+          <Platea data={data} />
+        </div>
+      </main>
   </div>
 )
 
