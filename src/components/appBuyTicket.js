@@ -50,10 +50,11 @@ const AppBuyTicket = ({navigateTo}) => (
     <Aside />
       <main className="Main-home Main-Buy">
         <div>
-          <button className="Btnzoom"onClick={()=> {navigateTo('pagina-1')}}>volver</button>
-          <button className="Btnzoom">zoom +</button>
-          <button className="Btnzoom">zoom -</button><br/><br/>
+          <button className="Btnzoom"onClick={()=> {navigateTo('pagina-1')}}><img className="Img-review" src="https://thumb.ibb.co/nNO7LS/1486348529_back_backwards_repeat_arrows_arrow_80455.png"/></button>
+          <button className="Btnzoom"><img className="Img-review" src="https://thumb.ibb.co/huwDS7/800998.png"/></button>
+          <button className="Btnzoom"><img className="Img-review" src="https://thumb.ibb.co/cEG8un/54426.png"/></button><br/><br/>
         </div>
+        <h1 className="Center">SELECCIONA PISO</h1>
         <br/><br/>
         <div className="Center BuyTicket">
           <Cazuela data={data} />
@@ -61,6 +62,7 @@ const AppBuyTicket = ({navigateTo}) => (
           <PalcosAltos data={data} />
           <PalcosBajos data={data} />
           <Platea data={data} />
+            <div className="Escenario"><h2>Escenario</h2></div>
         </div>
       </main>
   </div>
