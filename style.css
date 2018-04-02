@@ -8,68 +8,202 @@
   text-align: center;
 }
 
-* {
-  color: #eeeef1;
+body {
+  margin: 0;
 }
 
-.BuyTicket {
-border: 1px solid gray;
-background-color: rgb(240, 236, 236);
+.Right {
+  float: right;
 }
+
+.left {
+  float: left;
+}
+
+.white {
+  color: white;
+}
+
+
+/* * {
+  color: #eeeef1;
+  
+} */
+
+
+
+/* header-------------------------- */
+.Search {
+  border-radius: 7px;
+  width: 25%;
+  height: 30px;
+  float: right;
+  margin-top :25px;
+}
+
 
 .logo {
-  width: 10%;
-  height: 10%;
+  width: 9%;
+  height: 80px;
 }
 
 .header {
   width: 100%;
   height: 80px;
-  margin-left: 0;
   background-color: black;
+  padding: 0 49px;
 }
 
+/* fin header------------------ */
+
+/* aside------------- */
+
+aside {
+  width: 18%;
+  background-color: rgb(122, 226, 200);
+  height: 120vh;
+  margin-top: 0;
+  padding: 15px 0;
+  display: inline-block;
+}
+
+.Title-aside {
+  color: black;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+.Title-aside::after {
+  content: '';
+  background-color: white;
+  height: 2px;
+  width: 46px;
+  display: block;
+  margin-left: 42%;
+}
+
+.list-Category {
+  text-decoration: none;
+  list-style: none;
+  color: rgb(27, 27, 27);
+  font-size: 20px;
+  border-bottom: 1px solid rgb(65, 112, 110);
+  margin-right: 45px;
+  padding: 12px 0;
+}
+
+/* fin aside---------------- */
+
+/* home-------------------- */
+
+.Main-home{
+  width:82%;
+  float:right;
+  background-color: #ededee;
+  display: inline-block;
+}
+
+.Title-home {
+  margin-left: 5%;
+  font-weight: bolder;
+}
+
+.Title-home::after {
+  content: '';
+  background-color: rgb(39, 161, 145);
+  height: 2px;
+  width: 49px;
+  display: block;
+  margin-left: 2%;
+}
+
+.List-home {
+  width: 28%;
+  display: inline-block;
+  border-radius: 10px;
+  margin: 2%;
+  background-color: white;
+}
+.List-home:hover {
+  background-color: white;
+}
+
+.Name-home {
+  height: 38px;
+  background-color: white;
+  color: rgb(95, 94, 94);
+}
+
+.Img-home {
+  width: 100%;
+  height: 210px;
+}
+
+.Btn-home {
+  color: rgb(255, 255, 255);
+  border: none; 
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.Btn-home:hover {
+  color: rgb(94, 196, 170);
+  background-color: #fdfdfd;
+}
+span {
+  padding: 6px 10px;
+}
+
+.Img-clock {
+  width: 5%;
+  margin: 4px;
+}
+
+.div-btn {
+  background-color: rgb(94, 196, 170);
+  width: 100%;
+  height: 30px;
+}
+
+/* fin home-------------------- */
+.BuyTicket {
+  /* border: 1px solid gray; */
+    background-color: rgb(240, 236, 236);
+    color: white;
+  } 
+
+.Main-Buy {
+  background-color: rgb(240, 236, 236);
+  height: 120vh;
+  padding: 20px;
+}
 .PalcosBajos, .PalcosAltos, .Galeria, .Cazuela {
-  width: 60%;
+  width: 50%;
   display: flex;
   padding: 0;
-  margin: 1.2% auto 0;
+  margin: 0.6% auto 0;
   
 }
 
 .Platea {
-  width: 60%;
+  width: 50%;
   padding: 0;
   margin: 1% auto 0;
 }
 
 li:hover {
-  background-color: #968c8c86;
-  color: black;
+  background-color: #5ff7ea52;
+  color: rgb(8, 8, 8);
   cursor: pointer;
+  font-weight: bolder;
 }
 
-/* .PalcosAltos {
-  width: 80%;
-  margin:auto 40px;
-  background-color: rgb(245, 163, 12);
-  border: 1px solid black;
-  display: flex;
-  align-items: center;
-  margin-top: 0;
-} */
-
-/* .Plateas {
-  width: 80%;
-  display: flex;
-  margin-top: 0;
-} */
 .List-Galeria {
   text-decoration: none;
   background-color: rgb(240, 111, 60);
   border: 1px solid black;
   list-style: none;
-  height: 60px;
+  height: 45px;
   width: 50%;
   align-items: center;
 }
@@ -78,15 +212,15 @@ li:hover {
   background-color: rgb(100, 172, 51);
   border: 1px solid black;
   list-style: none;
-  height: 60px;
+  height: 45px;
   width: 33% !important;
   align-items: center;
 }
 
 .List-Cazuela:first-child {
-  margin-top: -72px;
+  margin-top: -48px;
   position: absolute;
-  margin-left: 13%;
+  margin-left: 3%;
 }
 
 .List-PalcosAlto {
@@ -94,7 +228,7 @@ li:hover {
   background-color: rgb(233, 141, 20);
   border: 1px solid black;
   list-style: none;
-  height: 60px;
+  height: 45px;
   width: 100%;
   align-items: center;
 }
@@ -104,7 +238,7 @@ li:hover {
   background-color: rgb(70, 9, 184);
   border: 1px solid black;
   list-style: none;
-  height: 60px;
+  height: 45px;
   width: 33.3%;
   align-items: center;
 }
@@ -117,77 +251,102 @@ li:hover {
   text-decoration: none;
   background-color: rgb(18, 28, 168);
   border: 1px solid black;
-  height: 60px;
+  height: 45px;
   list-style: none;
   display: block;
   align-items: center; 
 }
 
 .Btnzoom {
-  background: #27272b;
-  border-radius: 10px;
-  padding: 15px;
+  background: rgb(122, 226, 200);
+  border-radius: 100%;
+  padding: 7px;
   margin-left: 10px;
+  color: black;
+  font-weight: bolder;
+}
+
+.Img-review {
+  width: 24px;
+}
+
+.Escenario {
+  height: 85px;
+  width: 50%;
+  background-color: #b9b9bb;
+  margin-left: 25%;
 }
 
 /* 2 vista */
 
 .selectSeat {
-  padding: 3%;
-  background: black;
+  width: 82%;
+  padding: 2%;
+  background: rgb(240, 236, 236);
   height: 100vh;
+  box-sizing: border-box;
+  display: inline-block;
 }
+
 .Asientos {
   border: 1px solid white;
-  width: 25%;
-  height: 220px;
+  width: 41%;
+  height: 215px;
   margin: 10px auto;
 }
 
 .Leyenda {
   position: relative;
-  bottom: 34%;
-  left: 70%;
+  bottom: 37%;
+  left: 71%;
   width: 20%;
 }
 
 .Btnselect {
-  background: #27272b;
+  background: #40b7bb;
   border-radius: 10%;
-  padding: 10px;
-  margin-left: 10px;
+  padding: 9px;
+  /* margin-left: 10px; */
+  color: white;
+  font-weight: bolder;
 }
 
 .Btnselect:hover {
-  background: #b9b9bb;
+  background: #f7f7f8;
   padding: 12px;
-  color: black;
+  color: rgb(93, 243, 248);
+  font-size:16px;
+
 }
 
 .Disponibles {
-  width: 10px;
-  height: 10px;
-  background-color: brown;
+  width: 14px;
+  height: 14px;
+  background-color: rgb(20, 212, 212);
   border: 1px solid black;
   display: inline-flex;
 }
 .Ocupados {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(235, 216, 50);
+  width: 14px;
+  height: 14px;
+  background-color: rgb(241, 171, 19);
   border: 1px solid black;
   display: inline-flex;
 }
 
 .Site {
   border-radius: 100%;
-  background: rgb(97, 29, 29);
+  background: rgb(122, 226, 200);
   border: 1px solid white;
-  height: 30px;
-  width: 30px;
+  height: 35px;
+  width: 35px;
   cursor: pointer;
 }
 
 table {
   padding: 40px;
+}
+
+.btn-buy {
+  margin-top: 12px;
 }
