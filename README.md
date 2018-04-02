@@ -4,6 +4,7 @@
 
 - Desarrollar una plataforma que permita realizar la compra de tickets  para eventos de tipo teatro,considerando que los escenarios pueden tener mas de un piso.
 
+## Desarrollado para [Laboratoria](http://laboratoria.la)
 ## Flujo
 
 - Identificar los componentes de la vista principal.
@@ -21,7 +22,9 @@
 
 ![vista1](vista1.PNG)
 
-![vista1](vista2.PNG)
+![vista2](vista2.PNG)
+
+![vista3](vista3.png)
 
 ## Principales Herramientas
 - React
