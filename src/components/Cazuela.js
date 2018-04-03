@@ -1,16 +1,15 @@
 import React from 'react';
-import {connect} from 'react-redux';
+import { connect } from 'react-redux';
 
-const Cazuela = ({ data, seleccionarSeccion,navigateTo}) => {
-  data = data[0].types
-  console.log(data)
+const Cazuela = ({ data, seleccionarSeccion, navigateTo }) => {
+  data = data.cazuela
   return (
     <ul className="Cazuela">
       {
         data.map((element, index) =>
-          <li className="List-Cazuela" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-3')}}>
+          <li className="List-Cazuela" key={index} onClick={() => { seleccionarSeccion(element), navigateTo('pagina-3') }}>
             {element.name}
-            
+
           </li>
         )
       }
@@ -25,7 +24,7 @@ export default connect(
   }),
   (dispatch) => ({
     seleccionarSeccion(seccion) {
-      dispatch({type: 'SELECCIONAR_SECCION',seccion})
+      dispatch({ type: 'SELECCIONAR_SECCION', seccion })
     },
     navigateTo: (pagina) => {
       dispatch({

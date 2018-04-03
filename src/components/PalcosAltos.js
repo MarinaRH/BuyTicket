@@ -1,13 +1,13 @@
 import React from 'react';
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
 
-const PalcosAltos = ({data, seleccionarSeccion,navigateTo}) => {
-  data = data[2].types
+const PalcosAltos = ({ data, seleccionarSeccion, navigateTo }) => {
+  data = data.palcosAltos
   return (
     <ul className="PalcosAltos">
       {
         data.map((element, index) =>
-          <li className="List-PalcosAlto" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-3')}}>
+          <li className="List-PalcosAlto" key={index} onClick={() => { seleccionarSeccion(element), navigateTo('pagina-3') }}>
             {element.name}
           </li>
         )
@@ -21,7 +21,7 @@ export default connect(
   }),
   (dispatch) => ({
     seleccionarSeccion(seccion) {
-      dispatch({type: 'SELECCIONAR_SECCION',seccion})
+      dispatch({ type: 'SELECCIONAR_SECCION', seccion })
     },
     navigateTo: (pagina) => {
       dispatch({

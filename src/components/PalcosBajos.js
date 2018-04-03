@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 
 const PalcosBajos = ({data, seleccionarSeccion, navigateTo}) => {
   
-  data = data[3].types
+  data = data.palcosBajos
   return (
     <ul className="PalcosBajos">
       {

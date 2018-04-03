@@ -6,65 +6,30 @@ import PalcosBajos from './PalcosBajos'
 import Platea from './Platea'
 import Header from './Header'
 import Aside from './Aside'
-import {connect} from 'react-redux'
+import { connect } from 'react-redux'
+import dataBuyTicket from '../buyTicket.json'
 
-
-const data = [
-  { id: 'CAZ',
-    name: 'CAZUELA', 
-    types:[
-      {name: 'ALTA', butacas: 14}, 
-      {name: 'LATERAL DERECHO', butacas: 14},
-      {name: 'CENTRAL', butacas: 14},
-      {name: 'LATERAL IZQUIERDO', butacas: 14}],
-    level: '4 NIVEL' },
-  { id: 'GAL', 
-    name: 'GALERIA', 
-    types:[
-      {name: 'BUENA', butacas: 24}, 
-      {name: 'VISIBLE DERECHO', butacas: 24},
-      {name: 'VISIBLE IZQUIERDO', butacas: 24}],
-    level: '3 NIVEL'},
-  { id: 'PAA', 
-    name: 'PALCOS', 
-    types: [
-      {name:'ALTOS',butacas:55}],
-      level: '2 NIVEL' },
-  { id: 'PAB', 
-    name: 'PALCOS',
-    types: [
-      {name:'BAJO DERECHO',butacas:32},
-      {name:'BAJO IZQUIERDO',butacas:32}],
-    level: '' },
-  { id: 'PLA',
-    name: 'PLATEA',
-    types: [
-      {name:'GENERAL',butacas:34},
-      {name:'PREFERENCIAL',butacas:34}],
-    level: '1 NIVEL' }
-]
-
-const AppBuyTicket = ({navigateTo}) => (
+const AppBuyTicket = ({ navigateTo }) => (
   <div>
     <Header />
     <Aside />
-      <main className="Main-home Main-Buy">
-        <div>
-          <button className="Btnzoom"onClick={()=> {navigateTo('pagina-1')}}><img className="Img-review" src="https://thumb.ibb.co/nNO7LS/1486348529_back_backwards_repeat_arrows_arrow_80455.png"/></button>
-          <button className="Btnzoom"><img className="Img-review" src="https://thumb.ibb.co/huwDS7/800998.png"/></button>
-          <button className="Btnzoom"><img className="Img-review" src="https://thumb.ibb.co/cEG8un/54426.png"/></button><br/><br/>
-        </div>
-        <h1 className="Center">SELECCIONA PISO</h1>
-        <br/><br/>
-        <div className="Center BuyTicket">
-          <Cazuela data={data} />
-          <Galeria data={data} />
-          <PalcosAltos data={data} />
-          <PalcosBajos data={data} />
-          <Platea data={data} />
-            <div className="Escenario"><h2>Escenario</h2></div>
-        </div>
-      </main>
+    <main className="Main-home Main-Buy">
+      <div>
+        <button className="Btnzoom" onClick={() => { navigateTo('pagina-1') }}><img className="Img-review" src="https://thumb.ibb.co/nNO7LS/1486348529_back_backwards_repeat_arrows_arrow_80455.png" /></button>
+        <button className="Btnzoom"><img className="Img-review" src="https://thumb.ibb.co/huwDS7/800998.png" /></button>
+        <button className="Btnzoom"><img className="Img-review" src="https://thumb.ibb.co/cEG8un/54426.png" /></button><br /><br />
+      </div>
+      <h1 className="Center">SELECCIONA PISO</h1>
+      <br /><br />
+      <div className="Center BuyTicket">
+        <Cazuela data={dataBuyTicket} />
+        <Galeria data={dataBuyTicket} />
+        <PalcosAltos data={dataBuyTicket} />
+        <PalcosBajos data={dataBuyTicket} />
+        <Platea data={dataBuyTicket} />
+        <div className="Escenario"><h2>Escenario</h2></div>
+      </div>
+    </main>
   </div>
 )
 export default connect(
@@ -73,7 +38,7 @@ export default connect(
   }),
   (dispatch) => ({
     seleccionarSeccion(seccion) {
-      dispatch({type: 'SELECCIONAR_SECCION',seccion})
+      dispatch({ type: 'SELECCIONAR_SECCION', seccion })
     },
     navigateTo: (pagina) => {
       dispatch({
