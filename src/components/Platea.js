@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux'
 
 const Platea = ({data, seleccionarSeccion,navigateTo}) => {
-  data = data[4].types
+  data = data.platea
   return (
     <ul className="Platea">
       {
@@ -18,7 +18,6 @@ const Platea = ({data, seleccionarSeccion,navigateTo}) => {
 
 export default connect(
   (state) => ({
-
   }),
   (dispatch) => ({
     seleccionarSeccion(seccion) {

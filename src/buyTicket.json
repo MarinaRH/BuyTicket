@@ -1,0 +1,119 @@
+{
+    "cazuela": [{
+        "id": "CZ-ALTA",
+        "name": "CAZUELA ALTA",
+        "level": "4",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }, {
+        "id": "CZ-LA-DE",
+        "name": "CAZUELA LATERAL DERECHO",
+        "level": "4",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, ""],
+            [true, false, false, false, "",true],
+            ["", true, false, false, false]
+        ]
+    }, {
+        "id": "CZ-CE",
+        "name": "CAZUELA CENTRAL",
+        "level": "4",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }, {
+        "id": "CZ-LA-IZ",
+        "name": "CAZUELA LATERAL IZQUIERDO",
+        "level": "4",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }],
+    "galeria": [{
+        "id": "GAL-BN",
+        "name": "GALERIA BUENA",
+        "level": "3",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }, {
+        "id": "GAL-VD",
+        "name": "VISIBLE DERECHO",
+        "level": "3",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }, {
+        "id": "GAL-VI",
+        "name": "VISIBLE IZQUIERDO",
+        "level": "3",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }],
+    "palcosAltos": [{
+        "id": "PA-AL",
+        "name": "PALCOS ALTOS",
+        "level": "2",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }],
+    "palcosBajos": [{
+        "id": "PA-BD",
+        "name": "PALCOS BAJO DERECHO",
+        "level": "2",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }, {
+        "id": "PA-BI",
+        "name": "PALCOS BAJO IZQUIERDO",
+        "level": "2",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }],
+    "platea": [{
+        "id": "PL-G",
+        "name": "PLATEA GENERAL",
+        "level": "1",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }, {
+        "id": "PL-RE",
+        "name": "PLATEA REFERENCIAL",
+        "level": "1",
+        "butacas": [
+            ["", true, false, false, false],
+            [true, false, false, false, true],
+            ["", true, false, false, false]
+        ]
+    }],
+    "sales": {
+        "seat": []
+    }
+}

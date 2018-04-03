@@ -2,7 +2,7 @@ import React from 'react'
 import {connect} from 'react-redux'
 
 const Galeria = ({ data, seleccionarSeccion,navigateTo}) => {
-  data = data[1].types
+  data = data.galeria
   return (
     <ul className="Galeria">
       {
