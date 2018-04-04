@@ -1,9 +1,9 @@
 import React from 'react';
-// import Cazuela from './Cazuela'
+import Cazuela from './Cazuela'
 import Galeria from './Galeria'
-// import PalcosAltos from './PalcosAltos'
-// import PalcosBajos from './PalcosBajos'
-// import Platea from './Platea'
+import PalcosAltos from './PalcosAltos'
+import PalcosBajos from './PalcosBajos'
+import Platea from './Platea'
 import Header from './Header'
 import Aside from './Aside'
 import { connect } from 'react-redux'
