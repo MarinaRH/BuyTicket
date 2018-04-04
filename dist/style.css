@@ -167,16 +167,24 @@ span {
 
 /* fin home-------------------- */
 .BuyTicket {
-  /* border: 1px solid gray; */
-    background-color: rgb(240, 236, 236);
-    color: white;
-  } 
+  border-radius: 30px;
+  color: rgb(238, 234, 234);
+  width: 66%;
+  float: right;
+  display: inline-block;
+  font-weight: bolder;
+  background-color: #eceaea;
+}
 
 .Main-Buy {
-  background-color: rgb(240, 236, 236);
+  /* background-color: rgb(240, 236, 236); */
   height: 120vh;
   padding: 20px;
+  width:82%;
+  float:right;
+  display: inline-block;
 }
+
 .PalcosBajos, .PalcosAltos, .Galeria, .Cazuela {
   width: 50%;
   display: flex;
@@ -271,10 +279,11 @@ li:hover {
 }
 
 .Escenario {
-  height: 85px;
-  width: 50%;
+  height: 57px;
+  width: 66%;
   background-color: #b9b9bb;
-  margin-left: 25%;
+  margin-left: 17%;
+  margin-top: -147px;
 }
 
 /* 2 vista */
@@ -350,3 +359,53 @@ table {
 .btn-buy {
   margin-top: 12px;
 }
+
+.buts {
+  content: 'holaa';
+  position: relative;
+  cursor: pointer
+}
+.buts:hover {
+  background-color: #40b7bb !important;
+}
+
+/* ultimo */
+.Leyend {
+  width: 30%;
+  display: inline-block;
+  margin-top: 44px;
+}
+.cazuela {
+  width: 10%;
+  height: 30px;
+  background-color: #A4C354;
+  display: inline-flex;
+}
+.galeria {
+  width: 10%;
+  height: 30px;
+  background-color: #efb635;
+  /* display: inline-flex; */
+}
+.palcosA {
+  width: 10%;
+  height: 30px;
+  background-color: #E5842C ;
+  /* display: inline-flex; */
+}
+.palcosB {
+  width: 10%;
+  height: 30px;
+  background-color: #8168D1;
+  /* display: inline-flex; */
+}
+.platea {
+  width: 10%;
+  height: 30px;
+  background-color: #1955A2;
+  /* display: inline-flex; */
+}
+/* 
+.text-leyend {
+  display: inline-flex;
+} */
