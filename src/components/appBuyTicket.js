@@ -22,12 +22,14 @@ const AppBuyTicket = ({ navigateTo }) => (
       <h1 className="Center">SELECCIONA PISO</h1>
       <br /><br />
       <div className="Center BuyTicket">
-        {/* <Cazuela data={dataBuyTicket} /> */}
-        <Galeria data={dataBuyTicket} />
-        {/* <PalcosAltos data={dataBuyTicket} />
-        <PalcosBajos data={dataBuyTicket} />
-        <Platea data={dataBuyTicket} /> */}
-        <div className="Escenario"><h2>Escenario</h2></div>
+        <svg height="500" width="500" >
+          <Cazuela data={dataBuyTicket} />
+          <Galeria data={dataBuyTicket} />
+          <PalcosAltos data={dataBuyTicket} />
+          <PalcosBajos data={dataBuyTicket} />
+          <Platea data={dataBuyTicket} />
+          <div className="Escenario"><h2>Escenario</h2></div>
+        </svg>
       </div>
     </main>
   </div>
