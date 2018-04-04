@@ -38,7 +38,7 @@ const SelectSeat = ({ navigateTo }) => {
         <button className="Btnzoom left" onClick={() => { navigateTo('pagina-2') }}><img className="Img-review" src="https://thumb.ibb.co/nNO7LS/1486348529_back_backwards_repeat_arrows_arrow_80455.png" /></button>
         <h2>SELECCIONA TUS ASIENTOS</h2><br /><br />
         <div className="Center Asientos " id="container">
-          <svg dangerouslySetInnerHTML={AddCirculo(data.cazuela[1].butacas)}>
+          <svg dangerouslySetInnerHTML={AddCirculo(data.cazuela[0].butacas)}>
           </svg>
         </div><br /><br />
         <div className="Leyenda">
