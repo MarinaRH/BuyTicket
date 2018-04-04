@@ -35,8 +35,9 @@ const AppBuyTicket = ({ navigateTo }) => (
           <PalcosAltos data={dataBuyTicket} />
           <PalcosBajos data={dataBuyTicket} />
           <Platea data={dataBuyTicket} />
-          <div className="Escenario"><h2>Escenario</h2></div>
+          
         </svg>
+        <div className="Escenario"><h2>Escenario</h2></div>
       </div>
     </main>
   </div>

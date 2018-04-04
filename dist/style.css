@@ -173,7 +173,6 @@ span {
   float: right;
   display: inline-block;
   font-weight: bolder;
-  background-color: #eceaea;
 }
 
 .Main-Buy {
@@ -281,9 +280,10 @@ li:hover {
 .Escenario {
   height: 57px;
   width: 66%;
-  background-color: #b9b9bb;
+  background-color: #a7a7ad;
   margin-left: 17%;
   margin-top: -147px;
+  color:rgb(17, 38, 39);
 }
 
 /* 2 vista */
@@ -409,3 +409,4 @@ table {
 .text-leyend {
   display: inline-flex;
 } */
+

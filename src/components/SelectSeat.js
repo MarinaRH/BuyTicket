@@ -6,9 +6,9 @@ import data from '../buyTicket.json'
 
 const SelectSeat = ({ navigateTo }) => {
   // console.log()
-  const circulo = '<circle cx="50" cy="50" r="5" style="fill:rgb(120,120,255)"></circle>';
-  let cx = 20;
-  let cy = 20;
+  const circulo = '<circle cx="50" cy="50" r="5" style="fill:rgb(122, 226, 200)"></circle>';
+  let cx = 25;
+  let cy = 25;
   let circuloCant = '';
 
   function AddCirculo(arrButaca) {
@@ -19,7 +19,7 @@ const SelectSeat = ({ navigateTo }) => {
         if (arrButaca[i][j] === '') {
           cx += 20;
         } else if (arrButaca[i][j] === false || arrButaca[i][j] === true) {
-          circuloCant += '<circle  cy="' + cy + '" r="10" cx="' + cx + '" style="fill:#c3c3c3"><text x="' + cx + '" y="' + cy + '">' + (i + 1) + '</text></circle>'
+          circuloCant += '<circle  cy="' + cy + '" r="10" cx="' + cx + '" style="fill:rgb(122, 226, 200)"><text x="' + cx + '" y="' + cy + '">' + (i + 1) + '</text></circle>'
           cx += 20
         }
       }
