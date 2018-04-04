@@ -14,15 +14,6 @@ const Platea = ({ data, seleccionarSeccion, navigateTo }) => {
       <path d="M440 325 L360 325 L390 370 L480 370" fill="#1955A2" onClick={() => { navigateTo('pagina-3') }}></path>
 
     </g>
-    // <ul className="Platea">
-    //   {
-    //     data.map((element, index) =>
-    //       <li className="List-platea" key={index} onClick={()=> {seleccionarSeccion(element),navigateTo('pagina-3')}}>
-    //         {element.name}
-    //       </li>
-    //     )
-    //   }
-    // </ul>
   )
 }
 

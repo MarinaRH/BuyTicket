@@ -13,17 +13,7 @@ const Cazuela = ({ data, seleccionarSeccion, navigateTo }) => {
       <path d="M175 80 L325 80 L315 105 L185 105 Z" fill="#A4C354" onClick={() => { navigateTo('pagina-3') }}></path>
       <path d="M495 95 L380 80 L330 80 L320 105 L380 105 L495 130 Z" fill="#A4C354" onClick={() => { navigateTo('pagina-3') }}></path>
     </g>
-    // <ul className="Cazuela">
-    //   {
-    //     data.map((element, index) =>
-    //       <li className="List-Cazuela" key={index} onClick={() => { seleccionarSeccion(element), navigateTo('pagina-3') }}>
-    //         {element.name}
-
-    //       </li>
-    //     )
-    //   }
-    // </ul>
-  )
+   )
 
 }
 
